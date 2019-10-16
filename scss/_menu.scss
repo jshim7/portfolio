@@ -1,10 +1,9 @@
 //menu btn
 .menu-btn {
-  position: abosolute;
+  position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
-  float: right;
   cursor: pointer;
   @include easeIn;
 
@@ -15,5 +14,24 @@
     margin: 0 0 5px 0;
     background: #fff;
     @include easeIn;
+  }
+
+  //rotate into X with hamburger
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    }
   }
 }
