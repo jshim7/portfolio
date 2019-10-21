@@ -79,9 +79,10 @@ main {
   grid-gap: 30px;
 
   grid-template-areas:
-    " bio bio bio"
-    " job1 job2 job3";
-  grid-template-rows: 1fr 1fr 1fr;
+    "bio"
+    "job1"
+    "job2"
+    "job3";
 }
 
 .bio {
@@ -133,10 +134,11 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 2rem;
+    font-size: 25px;
     border: 3px white solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+
     @include easeIn;
 
     &:hover {
