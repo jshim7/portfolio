@@ -48,14 +48,14 @@
 
   .about-info {
     grid-template-areas:
-      "bio"
+      "bio "
       "bio"
       "bio"
       "job 1"
       "job 2"
       "job 3";
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .projects {
